@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+    --bordo: #772222;
+    --grisOscuro: #9c9797;
+    --grisClaro: #c7c7c7;
+    --azul: #2f2fe6;
+    --negro: #000000;
+    --blanco: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.ver{
+    height: 90%;
+}
+
+.ver #menu{
+    visibility: visible;
+    padding-top: 40px;
+    transition: visibility 1s;
+    transition-delay: 0.2s;
+}
+
+body{
+    background-color: var(--grisClaro);
+    padding: 90px 0px 0px 0px;
+}
+
+header{
+    position: fixed;
+    background: var(--bordo);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 1px 5px var(--negro);
+    width: 100%;
+    height: 90px;
+    top: 0;
+    z-index: 600;
+    display: flex;
+}
+
+#logoDivisor{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoDivisor #logoContainer{
+    width: 65%;
+    height: 80%;
+}
+
+#logoContainer img{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#tituloDivisor{
+    width: 70%;
+    height: 100%;
+}
+
+#tituloDivisor #tituloContainer{
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    white-space: pre-line;
+    
+}
+#tituloContainer h1{
+    font-size: 15px;
+    margin: 15px 0px 0px 20px;
+}
+
+#tituloContainer h1::first-line{
+    letter-spacing: 4px;
+    word-spacing: 15px;
+    font-size: 35px;
+}
+
+nav{
+    position: fixed;
+    background: linear-gradient(#6d6d6d 1%, var(--grisClaro) 99%);
+    border-bottom: 1px solid black;
+    border-radius: 0px 0px 30px 30px;
+    width: 100%;
+    height: 0%;
+    top: 75px;
+    z-index: 500;
+    transition-property: height ;
+    transition-duration: 1s;
+}
+
+nav #menu{
+    width: 100%;
+    height: 80%;
+    padding-top: 0px;
+    visibility: hidden;
+}
+#menu .menuItem{
+    border-top: 1px solid #a0a0a0;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    transition: padding-left 0.3s;
+}
+
+#menu.menuItem:first-child{
+    border: none;
+}
+
+#menu .menuItem:hover{
+    padding-left: 70px;
+}
+
+.menuItem p{
+    color: #bbbbbb;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+
+main{
+    width: 100%;
+    padding-top: 20px;
+    overflow: auto; 
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+    height: 400px;
+    margin: 25px 0px 20px 0px;
+}
+
+.content .imgSection{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSection .imgContainer{
+    width: 80%;
+    height: 90%;
+}
+
+.imgContainer img{
+    border-radius: 20PX;
+    width: 100%;
+    height: 100%;
+}
+
+.content .textSection{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+
+.textSection .subTitle{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+.textSection .description{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.description p{
+    width: 90%;
+    height: 100%;
+}
+
+footer{
+    background: var(--bordo);
+    width: 100%;
+    height: 100px;
+    z-index: 300;
+    display: flex;
+}
+
+footer div{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo #logoCont{
+    width: 50%;
+    height: 60%;
+}
+
+#logoCont img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#redes ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+#redes li{
+    list-style: none ;
+    cursor: pointer;
+}
+
+#redes li::before{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 0px 0px;
+    background-image: url(/multimedia/image/facebook.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#nombre{
+    white-space: pre-line;
+    font-size: 12px;
+    text-align: center;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+}
+

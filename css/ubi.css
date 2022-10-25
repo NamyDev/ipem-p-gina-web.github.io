@@ -1,0 +1,80 @@
+:root{
+    --bordo: #772222;
+    --grisOscuro: #9c9797;
+    --grisClaro: #c7c7c7;
+    --azul: #2f2fe6;
+    --negro: #000000;
+    --blanco: #ffffff;
+}
+
+#sectionMap{
+    position: relative;
+    border-radius: 25px;
+    background: var(--blanco);
+    width: 98%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#sectionMap #mapContainer{
+    width: 95%;
+    height: 80%;
+    margin-top: 55px;
+}
+
+#sectionMap h2{
+    position: absolute;
+    background: var(--azul);
+    border-radius: 25px 0px;
+    color: var(--blanco);
+    width: 40%;
+    height: 40px;
+    font-size: 30px;
+    left: 0px;
+    padding-left: 10px;
+}
+
+#mapContainer iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#sectionFotos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionFotos h3{
+    background: var(--bordo);
+    color: var(--blanco);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sectionFotos #fotosContainer{
+    width: 95%;
+    background: var(--blanco);
+    border-radius: 25px;
+    height: 200px;
+    margin-top: 10px;
+    overflow: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fotosContainer img{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 200px;
+}
